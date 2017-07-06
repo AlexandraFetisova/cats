@@ -1,0 +1,342 @@
+.card {
+	width: 980px;
+	height: 600px;
+	margin: 0px auto;
+	position: relative;
+	background: #000;
+	overflow: hidden;
+}
+/****moon****/
+.moon {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	box-shadow: 15px 15px 0 0 LightBlue;
+	position: absolute;
+	top: 30%;
+	left: 0;
+	z-index: 1;
+	-webkit-animation: moon 15s linear 0s infinite normal;
+	animation: moon 15s linear 0s infinite normal;
+}
+/****stars****/
+.stars {
+	position: relative
+}
+.star-small {
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+	background: AntiqueWhite;
+	-webkit-animation: star 2s  infinite alternate;
+	animation: star 2s  infinite alternate;
+}
+.star-big {
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background: AntiqueWhite;
+	-webkit-animation: star 2s  infinite alternate;
+	animation: star 2s  infinite alternate;
+}
+.star-1 {
+	position: absolute;
+	top: 10px;
+	left: 300px;
+}
+.star-2 {
+	position: absolute;
+	top: 10px;
+	right: 300px;
+}
+.star-3 {
+	position: absolute;
+	top: 20px;
+	left: 333px;
+}
+.star-4 {
+	position: absolute;
+	top: 30px;
+	right: 68px;
+}
+.star-5 {
+	position: absolute;
+	top: 40px;
+	left: 397px;
+}
+.star-6 {
+	position: absolute;
+	top: 50px;
+	right: 888px;
+}
+.star-7 {
+	position: absolute;
+	top: 60px;
+	left: 235px;
+}
+.star-8 {
+	position: absolute;
+	top: 70px;
+	right: 384px;
+}
+.star-9 {
+	position: absolute;
+	top: 80px;
+	left: 758px;
+}
+.star-10 {
+	position: absolute;
+	top: 90px;
+	right: 433px;
+}
+.star-11 {
+	position: absolute;
+	top: 100px;
+	left: 30px;
+}
+.star-12 {
+	position: absolute;
+	top: 110px;
+	right: 259px;
+}
+.star-13 {
+	position: absolute;
+	top: 125px;
+	left: 112px;
+}
+.star-14 {
+	position: absolute;
+	top: 140px;
+	right: 256px;
+}
+.star-15 {
+	position: absolute;
+	top: 155px;
+	left: 762px;
+}
+.star-16 {
+	position: absolute;
+	top: 170px;
+	right: 666px;
+}
+.star-17 {
+	position: absolute;
+	top: 185px;
+	left: 555px;
+}
+.star-18 {
+	position: absolute;
+	top: 190px;
+	right: 98px;
+}
+.star-19 {
+	position: absolute;
+	top: 205px;
+	left: 263px;
+}
+.star-20 {
+	position: absolute;
+	top: 250px;
+	right: 81px;
+}
+/****heart****/
+.heart {
+	position: absolute;
+	top: 411px;
+	left: 405px;
+	width: 100px;
+	height: 90px;
+	opacity: 0;
+	-webkit-animation: heart 7s  infinite linear;
+	animation: heart 7s  infinite linear;
+}
+.heart:before,
+.heart:after {
+	position: absolute;
+	content: "";
+	left: 50px;
+	top: 0;
+	width: 50px;
+	height: 80px;
+	background: red;
+	-moz-border-radius: 50px 50px 0 0;
+	border-radius: 50px 50px 0 0;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	-webkit-transform-origin: 0 100%;
+	-moz-transform-origin: 0 100%;
+	-ms-transform-origin: 0 100%;
+	-o-transform-origin: 0 100%;
+	transform-origin: 0 100%;
+}
+.heart:after {
+	left: 0;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+	-webkit-transform-origin: 100% 100%;
+	-moz-transform-origin: 100% 100%;
+	-ms-transform-origin: 100% 100%;
+	-o-transform-origin: 100% 100%;
+	transform-origin :100% 100%;
+}
+.heart-pink {
+	-webkit-animation: heartpink 7s  infinite 2s linear;
+	animation: heartpink 7s  infinite 2s linear;
+}
+.heart-pink:before,
+.heart-pink:after {
+	background: Maroon ;
+}
+.heart-tomato {
+	-webkit-animation: hearttomato 8s  infinite 5s linear;
+	animation: hearttomato 8s  infinite 5s linear;
+}
+.heart-tomato:before,
+.heart-tomato:after {
+	background: tomato;
+}
+.heart-IndianRed {
+	-webkit-animation: heart 8s  infinite 5s linear;
+	animation: heart 8s  infinite 5s linear;
+}
+.heart-IndianRed:before,
+.heart-IndianRed:after {
+	background: IndianRed;
+}
+/****cats****/
+.cats {
+	position: absolute;
+	bottom: 0;
+	left: 240px;
+}
+.cat {
+	margin: 0 45px;
+	float: left;
+	position: relative;
+}
+.cat-reverse {
+	transform: scaleX(-1);
+}
+.ears {
+	margin-left: 24px;
+	margin-bottom: -25px;
+}
+.ear {
+	float: left;
+	width: 0;
+	height: 0;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;	
+	border-bottom: 50px solid Cornsilk;	
+}
+
+.face {
+	width: 100px;
+	height: 100px;
+	background: Cornsilk;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	margin: 0 auto;
+}
+.body {
+	display:block;
+	width: 126px;
+	height: 180px;
+	background-color: Cornsilk;
+	-webkit-border-radius: 63px 63px 63px 63px / 108px 108px 72px 72px;
+	border-radius:         50%  50%  50%  50%  / 60%   60%   40%  40%;
+	margin-top:-17px;
+}
+.tail {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.tail-curve {
+	width: 70px;
+	height: 70px;
+	border: 10px solid LightSteelBlue ;
+	border-radius: 50%;	
+}
+.tail-top {	
+	margin-left: -57px;
+	margin-bottom: -34px;
+	border-left-color: transparent;
+	border-bottom-color: transparent;	
+}
+.tail-bottom {
+	border-top-color: transparent;
+	border-right-color: transparent;	
+}
+/***********animation*****************/
+@keyframes moon {
+	0% {top: 30%; left: -50%;}
+	25% {top: 14%; left: 20%;}
+	50% {top: 12%; left: 42%;}
+	75% {top: 14%; left: 55%;}
+	100% {top: 30%; left: 105%;}
+}
+@-webkit-keyframes moon {
+	0% {top: 30%; left: -50%;}
+	25% {top: 14%; left: 20%;}
+	50% {top: 12%; left: 42%;}
+	75% {top: 14%; left: 55%;}
+	100% {top: 30%; left: 105%;}
+}
+@keyframes star {
+	from {background: #fff; transform: scale(0.1); box-shadow: 0 1px 10px 10px rgba(255,0,255, 1);}
+	to {background: yellow; transform: scale(1); box-shadow: 0 1px 10px 10px rgba(255,255,0, 1);}
+}
+@-webkit-keyframes star {
+	from {background: #fff; transform: scale(0.1); box-shadow: 0 1px 10px 10px rgba(255,0,255, 1);}
+	to {background: yellow; transform: scale(1); box-shadow: 0 1px 10px 10px rgba(255,255,0, 1);}
+}
+@keyframes heart {
+	0% {transform: translate(0,0) rotate(-15deg) scale(0.1); opacity: 1;}
+	50% {transform: translate(0px,-300px) rotate(0deg)  scale(0.5); opacity: 1;}
+	100% {transform: translate(0px,-650px) rotate(15deg)  scale(1); opacity: 1;}
+}
+@-webkit-keyframes heart {
+	0% {transform: translate(0,0) rotate(-15deg) scale(0.1); opacity: 1;}
+	50% {transform: translate(0px,-300px) rotate(0deg)  scale(0.5); opacity: 1;}
+	100% {transform: translate(0px,-650px) rotate(15deg)  scale(1); opacity: 1;}
+}
+@keyframes heartpink {
+	0% {transform: translate(0,0) rotate(-15deg) scale(0.1); opacity: 1;}
+	50% {transform: translate(0px,-150px) rotate(0deg)  scale(0.5); opacity: 1;}
+	60% {transform: translate(-350px,-350px) rotate(0deg)  scale(1); opacity: 1;}
+	70% {transform: translate(-400px,-400px) rotate(0deg)  scale(1); opacity: 1;}
+	80% {transform: translate(-450px,-450px) rotate(-15deg) scale(1); opacity: 1;}
+	100% {transform: translate(-650px,-650px) rotate(15deg)  scale(1); opacity: 1;}
+}
+@-webkit-keyframes heartpink {
+	0% {transform: translate(0,0) rotate(-15deg) scale(0.1); opacity: 1;}
+	50% {transform: translate(0px,-150px) rotate(0deg)  scale(0.5); opacity: 1;}
+	60% {transform: translate(-350px,-350px) rotate(0deg)  scale(1); opacity: 1;}
+	70% {transform: translate(-400px,-400px) rotate(0deg)  scale(1); opacity: 1;}
+	80% {transform: translate(-450px,-450px) rotate(-15deg) scale(1); opacity: 1;}
+	100% {transform: translate(-600px,-650px) rotate(15deg)  scale(1); opacity: 1;}
+}
+@keyframes hearttomato {
+	0% {transform: translate(0,0) rotate(-15deg) scale(0.1); opacity: 1;}
+	50% {transform: translate(0px,-150px) rotate(0deg)  scale(0.5); opacity: 1;}
+	60% {transform: translate(350px,-350px) rotate(0deg)  scale(1); opacity: 1;}
+	70% {transform: translate(500px,-400px) rotate(0deg)  scale(1); opacity: 1;}
+	80% {transform: translate(550px,-450px) rotate(-15deg) scale(1); opacity: 1;}
+	100% {transform: translate(600px,-650px) rotate(15deg)  scale(1); opacity: 1;}
+}
+@-webkit-keyframes hearttomato {
+	0% {transform: translate(0,0) rotate(-15deg) scale(0.1); opacity: 1;}
+	50% {transform: translate(0px,-150px) rotate(0deg)  scale(0.5); opacity: 1;}
+	60% {transform: translate(350px,-350px) rotate(0deg)  scale(1); opacity: 1;}
+	70% {transform: translate(500px,-400px) rotate(0deg)  scale(1); opacity: 1;}
+	80% {transform: translate(550px,-450px) rotate(-15deg) scale(1); opacity: 1;}
+	100% {transform: translate(600px,-650px) rotate(15deg)  scale(1); opacity: 1;}
+}
